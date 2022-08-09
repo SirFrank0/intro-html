@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi primera web</title> 
+
+    <!--Agrega un borde a cada una de las celdas de tabla, th y td-->
+    <style>
+         table, th, td {
+            border:1px solid black;     
+        }
+    </style>
+</head>
+<body>
+
+    <table style="width: 500px;">   <!--Agrega un ancho de 500px a la tabla-->
+
+        <thead>                     <!--Agrupa los elementos de la cabecera de una tabla-->
+            <tr>
+                <th>Precio</th>
+                <th>Producto</th>
+            </tr>
+        </thead>
+
+        <tbody>                     <!--Agrupa los elementos del cuerpo de una tabla, util para el scroll de los elementos en algunos navegores-->
+            <tr>
+                <td>Hola beats</td>
+                <td>Gratis</td>
+            </tr>
+            <tr>
+                <td>Chachito feliz</td>
+                <td>$19,90</td>
+            </tr>
+            <tr>
+                <td>Chachito feliz muy feliz</td>
+                <td>$29,90</td>
+            </tr>
+        </tbody>
+                
+        <tfoot>                             <!--Agrupa los elementos del footer de una tabla-->
+                <td></td>
+                <td>Total $49.80</td>
+        </tfoot>
+
+    </table>
+
+
+    <!--ul es una lista no ordenada-->
+
+    <ul>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ul>
+
+    <!--ol es una lista ordenada-->
+
+    <ol>
+        <li value="50">Elemento 1</li>          <!--Valor inicial de la lista es 50-->
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+
+
+     <!--Agregar una lista dentro de una lista-->
+        <li><br>
+            <ol style="list-style-type:lower-alpha;"> <!--Cambiar estilo de lita por vocales en vez de numeros-->
+                <li >Sub Elemento 1</li>         
+                <li >Sub Elemento 2</li>
+                <li >Sub Elemento 3</li>
+            </ol>
+        </li>
+    </ol>
+
+
+    <form action="/formulario" method="POST">
+        <label for="nombre">Nombre</label>
+        <input value="chanchito" id="nombre" name="nombre" placeholder="Ingrese su nombre" type="text"/>
+        <br>
+        <label for="apellido">Apellido</label>
+        <input value="feliz" id="apellido" name="apellido" placeholder="Ingrese su apellido" type="text"/>
+        <br>
+        <label for="comentario">Comentario</label>
+        <br>
+        <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Ingrese un comentario">Este es un valor por defecto</textarea>
+        <br>
+        <button type="button"><img src="Img/Captura de pantalla 2022-08-02 174519.png"/>Tipo boton</button>
+        <button type="reset">Tipo reset</button>
+        <button type="submit">Tipo submit</button>
+    </form>
+    <h1>Mi primer heading</h1>
+    <h2>Mi segundo heading</h2>
+    <h3>Mi tercer heading</h3>
+    <p>Este  texto es <span style="color:blue">mas largo</span> sirve 
+     para  ver la etiqueta span.</p>
+    <hr></hr>
+    <h4>Mi cuarto heading</h4>
+    <h5>Mi quinto heading</h5>
+    <h6>Mi sexto heading</h6>
+    <!--Esto es un comentario y no
+        va a aparecer en la pantalla-->
+    <a target="_blank" href="https://www.google.com/"> Ir a Google</a> <br></br>
+
+    <img src="Img/Captura de pantalla 2022-08-02 174519.png" width="400" height="400"/>
+
+    
+
+</body>
+</html>
